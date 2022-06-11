@@ -11,7 +11,7 @@ function activateCalculator(){
     if(document.getElementById('yesbutton').checked && document.getElementById('yesbutton1').checked && document.getElementById('yesbutton2').checked && document.getElementById('yesbutton3').checked && document.getElementById('yesbutton4').checked){
         document.getElementById("answer").innerHTML = "Você pode comprar! &#129321;";
     } else {
-        document.getElementById("answer").innerHTML = "Você NÃO pode comprar! &#128555;";
+        document.getElementById("answer").innerHTML = "Você não pode comprar! &#128555;";
     }
 }
 
