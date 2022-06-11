@@ -8,10 +8,11 @@ function changeColor(){
 }
 
 function activateCalculator(){
+    var answer = document.getElementById("answer")
     if(document.getElementById('yesbutton').checked && document.getElementById('yesbutton1').checked && document.getElementById('yesbutton2').checked && document.getElementById('yesbutton3').checked && document.getElementById('yesbutton4').checked){
-        document.getElementById("answer").innerHTML = "Você pode comprar! &#129321;";
+        answer.innerHTML = "Você pode comprar! &#129321;";
     } else {
-        document.getElementById("answer").innerHTML = "Você NÃO pode comprar! &#128555;";
+        answer.innerHTML = "Você NÃO pode comprar! &#128555;";
     }
 }
 
