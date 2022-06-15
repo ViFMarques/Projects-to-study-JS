@@ -7,28 +7,29 @@ var imagem = document.getElementById('img');
 vermelho.addEventListener('click', deixarvermelho);
 
 function deixarvermelho() {
-    imagem.src = "img/vermelho.png";
+    imagem.src = "img/vermelho.png"
 
-}
+};
+
 amarelo.addEventListener('click', deixaramarelo);
 
 function deixaramarelo() {
-    imagem.src = "img/amarelo.png";
-}
+    imagem.src = "img/amarelo.png"
+};
 
 verde.addEventListener('click', deixarverde);
 
 function deixarverde() {
     imagem.src = "img/verde.png";
-}
+};
 
 // Começa aqui a luta para fazer o botão automático funcionar: 
 
 function sleep(ms) {
     return new Promise(
         resolve => setTimeout(resolve, ms)
-    );
-}
+    )
+};
 
 async function botaoautomatico() {
     
@@ -38,8 +39,8 @@ async function botaoautomatico() {
         deixarautomatico();
         await sleep(3000);
     } while (i < 10);
-    imagem.src = "img/desligado.png";
-}
+    imagem.src = "img/desligado.png"
+};
 
 async function deixarautomatico() {
     deixarvermelho();
@@ -48,10 +49,9 @@ async function deixarautomatico() {
     await sleep(1000);
     deixarverde();
     await sleep(1000);
-}
+};
 
 automatico.addEventListener('click', botaoautomatico);
-
 
 automatico.addEventListener('dbclick', tirarautomatico);
 
