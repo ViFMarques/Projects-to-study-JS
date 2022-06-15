@@ -15,7 +15,6 @@ function imc() {
 
         let classificacao = '';
 
-
         if (valorImc < 18.5) {
             classificacao = 'abaixo do peso';
         } else if (valorImc <= 24.9) {
@@ -34,6 +33,5 @@ function imc() {
 
         } else {
             resultado.textContent = 'Preencha todos os campos, por favor!';
-        }
-     
+        }    
  }
