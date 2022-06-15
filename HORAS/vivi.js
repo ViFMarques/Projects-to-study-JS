@@ -1,13 +1,17 @@
+
 function carregar() {
-    var msg = window.document.getElementById ('msg')
-    var imagem = window.document.getElementById ('imagem')
-    var data = new Date()
-    var hora = data.getHours()
-    var minuto = data.getMinutes()
-    var desejo = window.document.getElementById ('desejo')
-    var pessoa = prompt(" Olá :)  Como posso te chamar?");
+
+    let msg = window.document.getElementById ('msg')
+    let imagem = window.document.getElementById ('imagem')
+    let data = new Date()
+    let hora = data.getHours()
+    let minuto = data.getMinutes()
+    let desejo = window.document.getElementById ('desejo')
+    let pessoa = prompt(" Olá :) Como posso te chamar?")
+
 
     msg.innerHTML =  `Agora são <strong> ${hora}:${minuto} </strong> horas`
+
     if (hora >= 0 && hora < 12) {
         desejo.innerHTML = `Tenha um ótimo dia, ${pessoa}!`
         imagem.src = 'fotomanha.png' 
@@ -20,6 +24,8 @@ function carregar() {
         desejo.innerHTML = `Tenha uma excelente noite ${pessoa}!`
         imagem.src = 'fotonoite.png' 
         document.body.style.background = '#363636'
+
     }
+    
 }
 
