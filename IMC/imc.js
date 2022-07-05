@@ -35,3 +35,4 @@ function imc() {
             resultado.textContent = 'Preencha todos os campos, por favor!';
         }    
  }
+
